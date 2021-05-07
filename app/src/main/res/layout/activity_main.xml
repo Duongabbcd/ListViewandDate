@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <TextView
+            android:background="@color/teal_700"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Quản lý nhân viên"
+            android:textSize="30dp"
+            android:gravity="center" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã NV:"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/ed1"
+            android:textSize="30dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên NV:"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/ed2"
+            android:textSize="30dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới Tính:"
+            android:textSize="25dp"/>
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rd1"
+                    android:checked="true"
+                    android:text="Nữ">
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/rd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam">
+                </RadioButton>
+            </TableRow>
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_marginLeft="130dp"
+            android:id="@+id/bt"
+            android:layout_span="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập NV"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/datetext"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/eddate"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:background="@color/teal_700"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Danh Sách nhân viên:"
+            android:textSize="30dp"
+            android:gravity="start" />
+    </TableRow>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</TableLayout>

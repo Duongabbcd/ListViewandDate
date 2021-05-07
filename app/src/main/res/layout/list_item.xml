@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:id="@+id/icon"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_gravity="start"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remove"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:text="None"
+        android:textSize="25dp"
+       />
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"/>
+
+</LinearLayout>
